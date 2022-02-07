@@ -1,0 +1,15 @@
+install dotnet
+dotnet restore
+dotnet run
+
+crt certificate install
+
+nodejs install
+
+npm install @angular/cli@latest
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+
+
+dotnet ef migrations add OrderEntityAdded -p Infrastructure -s API -c StoreContext
