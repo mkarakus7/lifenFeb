@@ -19,7 +19,7 @@ intercept(req: HttpRequest<any>, next: HttpHandler)
     }
       
     return next.handle(req).pipe(
-        delay(500),
+        //delay(500),
         finalize( ()=> {
             this.busySer.idle();
         })
